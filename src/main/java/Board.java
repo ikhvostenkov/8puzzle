@@ -49,7 +49,8 @@ public class Board {
         for (int i = 0; i < size; i++) {
             int value = i + 1;
             if (tiles[i] != size && tiles[i] != value) {
-                distanceToGoal += Math.abs((tiles[i] - 1) / dimension - i / dimension) + Math.abs((tiles[i] -1) % dimension - i % dimension);
+                distanceToGoal += Math.abs((tiles[i] - 1) / dimension - i / dimension)
+                    + Math.abs((tiles[i] -1) % dimension - i % dimension);
             }
         }
 
